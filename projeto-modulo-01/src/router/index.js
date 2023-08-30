@@ -6,6 +6,7 @@ import ExerciseManagement from "../views/ExerciseManagement/ExerciseManagement.v
 import StudentManagement from "../views/StudentManagement/StudentManagement.vue";
 import NewStudent from "../views/NewStudentRegistration/NewStudentRegistration.vue";
 import TrainingRegistration from "../views/TrainingRegistration/TrainingRegistration.vue";
+import TrainingView from "../views/TrainingView/TrainingView.vue";
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: "/cadastro-treinos",
     name: "TrainingRegistration",
     component: TrainingRegistration,
+  },
+  {
+    path: "/visualizacao-treinos",
+    name: "TrainingView",
+    component: TrainingView,
   },
 ];
 
