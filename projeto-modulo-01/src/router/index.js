@@ -1,9 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
+import Login from "../views/Login/Login.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // Rotas serão adicionadas aqui posteriormente
+    {
+      path: "/",
+      name: "login",
+      component: Login,
+    },
   ],
 });
 
