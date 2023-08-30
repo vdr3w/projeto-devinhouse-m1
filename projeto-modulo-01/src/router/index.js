@@ -4,6 +4,7 @@ import RegisterUser from "../views/Register/RegisterUser.vue";
 import Dashboard from "../views/Dashboard/Dashboard.vue";
 import ExerciseManagement from "../views/ExerciseManagement/ExerciseManagement.vue";
 import StudentManagement from "../views/StudentManagement/StudentManagement.vue";
+import NewStudent from "../views/NewStudentRegistration/NewStudentRegistration.vue";
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: "/alunos",
     name: "StudentManagement",
     component: StudentManagement,
+  },
+  {
+    path: "/novo-aluno",
+    name: "NewStudent",
+    component: NewStudent,
   },
 ];
 
