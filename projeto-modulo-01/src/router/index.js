@@ -3,6 +3,7 @@ import Login from "../views/Login/Login.vue";
 import RegisterUser from "../views/Register/RegisterUser.vue";
 import Dashboard from "../views/Dashboard/Dashboard.vue";
 import ExerciseManagement from "../views/ExerciseManagement/ExerciseManagement.vue";
+import StudentManagement from "../views/StudentManagement/StudentManagement.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/exercicios",
     name: "exerciseManagement",
     component: ExerciseManagement,
+  },
+  {
+    path: "/alunos",
+    name: "StudentManagement",
+    component: StudentManagement,
   },
 ];
 
