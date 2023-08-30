@@ -11,6 +11,11 @@ import TrainingView from "../views/TrainingView/TrainingView.vue";
 const routes = [
   {
     path: "/",
+    name: "Dashboard",
+    component: Dashboard,
+  },
+  {
+    path: "/login",
     name: "Login",
     component: Login,
   },
@@ -18,11 +23,6 @@ const routes = [
     path: "/register",
     name: "Register",
     component: RegisterUser,
-  },
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard,
   },
   {
     path: "/exercicios",
