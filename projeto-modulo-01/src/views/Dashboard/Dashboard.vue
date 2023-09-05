@@ -13,14 +13,18 @@
       <!-- Centralização vertical para "Imagem" -->
       <v-row class="fill-height" align="center">
         <v-col cols="12" class="d-flex align-center justify-center">
-          <v-img
-            max-width="400"
-            :width="341"
-            aspect-ratio="16/9"
-            cover
-            src="https://i.imgur.com/GcjBaP9.jpeg"
-            @click="triggerAnimation">
-          </v-img>
+          <v-tooltip text="🥺 Faça carinho na Mel 🐾🐶🧡">
+            <template v-slot:activator="{ props }">
+              <v-img
+                v-bind="props"
+                max-width="400"
+                :width="341"
+                aspect-ratio="16/9"
+                cover
+                src="https://i.imgur.com/GcjBaP9.jpeg"
+                @click="triggerAnimation">
+              </v-img></template
+          ></v-tooltip>
         </v-col>
       </v-row>
       <!-- Centralização vertical para "Hora" -->
