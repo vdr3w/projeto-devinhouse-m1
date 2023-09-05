@@ -1,13 +1,21 @@
 <template>
   <v-card
-    loading
-    elevation="12"
+    elevation="16"
+    rounded="xl"
     class="ma-10 mx-auto pa-4 pa-md-6"
-    min-width="320px"
-    max-width="80%"
-    prepend-icon="mdi-home">
+    min-width="310px"
+    max-width="700px"
+    :style="{
+      backgroundColor: '#fff',
+      color: 'var(--licorice)',
+    }">
     <template v-slot:title>
-      <h1 class="pa-2">Cadastro de Novo Aluno</h1>
+      <div
+        class="pa-2 d-flex align-center"
+        :style="{ color: 'var(--rosewood)' }">
+        <v-icon large class="mr-2">mdi-home</v-icon>
+        <h1>Cadastro de Novo Aluno</h1>
+      </div>
     </template>
 
     <v-card-text>
@@ -98,10 +106,29 @@
                 ></v-col>
               </v-row>
 
-              <v-btn type="submit" class="ma-2">Cadastrar</v-btn>
+              <v-btn
+                prepend-icon="mdi-account-check-outline"
+                stacked
+                type="submit"
+                class="ma-2"
+                :style="{
+                  backgroundColor: 'var(--rosewood)',
+                  color: 'var(--jonquil)',
+                }"
+                >Cadastrar</v-btn
+              >
 
               <router-link to="/alunos">
-                <v-btn class="ma-2">VER ALUNOS</v-btn>
+                <v-btn
+                  append-icon="mdi-account-eye-outline"
+                  stacked
+                  class="ma-2"
+                  :style="{
+                    backgroundColor: 'var(--rosewood)',
+                    color: 'var(--jonquil)',
+                  }"
+                  >VER ALUNOS</v-btn
+                >
               </router-link>
             </v-form>
           </v-col>

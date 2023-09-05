@@ -137,7 +137,6 @@ export default {
   },
   watch: {
     selectedDay(newDay) {
-      // Update todayExercises array based on the selected day
       this.todayExercises = this.weekExercises[newDay];
     },
   },
@@ -166,7 +165,7 @@ export default {
             weight: workout.weight,
             repetitions: workout.repetitions,
             break_time: workout.break_time,
-            name: workout.exercise_description, // Mantenha esta linha se necessário para outras partes do código
+            name: workout.exercise_description,
           });
         }
       } catch (error) {
@@ -190,13 +189,11 @@ export default {
     },
   },
   created() {
-    const studentId = 1; // Replace with the actual student ID
+    const studentId = 1;
     this.fetchWorkouts(studentId);
 
-    // Get the current day index (0 for Sunday, 1 for Monday, etc.)
     const currentDayIndex = new Date().getDay();
 
-    // Map the day index to the corresponding day of the week
     const daysOfWeek = [
       "domingo",
       "segunda",
@@ -208,10 +205,10 @@ export default {
     ];
     const currentDay = daysOfWeek[currentDayIndex];
 
-    // Set the selected day to the current day
     this.selectedDay = currentDay;
 
     console.log("All Exercises:", this.weekExercises);
+    console.log(this.selectedDay);
 
     // Filter exercises for the current day from API response
     if (this.weekExercises[currentDay]) {
