@@ -9,7 +9,10 @@
         ">
       </v-navigation-drawer>
 
-      <v-app-bar app style="background-color: var(--licorice)">
+      <v-app-bar
+        v-if="showAppBar"
+        app
+        style="background-color: var(--licorice)">
         <v-toolbar-title style="color: var(--jonquil)">
           <div style="display: flex; align-items: center">
             <v-icon class="text-h3">mdi-weight-lifter</v-icon>
@@ -73,7 +76,15 @@
 </template>
 
 <script setup>
-import { RouterView } from "vue-router";
+import { ref, watchEffect } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+const showAppBar = ref(true);
+
+watchEffect(() => {
+  showAppBar.value = !["/login", "/register"].includes(route.path);
+});
 </script>
 
 <style>
