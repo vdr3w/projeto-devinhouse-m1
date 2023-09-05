@@ -18,7 +18,6 @@
           text
           :style="{
             color: 'var(--jonquil)',
-            'background-color': 'var(--rosewood)',
             'margin-right': '0.5rem',
           }">
           <p class="font-weight-bold d-none d-sm-flex">Home</p>
@@ -29,7 +28,6 @@
           text
           :style="{
             color: 'var(--jonquil)',
-            'background-color': 'var(--rosewood)',
             'margin-right': '0.5rem',
           }">
           <p class="font-weight-bold d-none d-sm-flex">Alunos</p>
@@ -40,7 +38,6 @@
           text
           :style="{
             color: 'var(--jonquil)',
-            'background-color': 'var(--rosewood)',
             'margin-right': '0.5rem',
           }">
           <p class="font-weight-bold d-none d-sm-flex">Exercícios</p>
