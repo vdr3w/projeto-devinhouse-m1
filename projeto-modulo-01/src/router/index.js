@@ -40,12 +40,12 @@ const routes = [
     component: NewStudent,
   },
   {
-    path: "/cadastro-treinos",
+    path: "/cadastro-treinos/:id/",
     name: "TrainingRegistration",
     component: TrainingRegistration,
   },
   {
-    path: "/visualizacao-treinos",
+    path: "/visualizacao-treinos/:id/",
     name: "TrainingView",
     component: TrainingView,
   },
