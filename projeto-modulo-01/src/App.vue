@@ -1,14 +1,6 @@
 <template>
   <div style="background-color: var(--lavender-blush)">
     <v-app style="background-color: var(--lavender-blush)">
-      <v-navigation-drawer
-        app
-        style="
-          background-color: var(--licorice);
-          color: var(--battleship-gray);
-        ">
-      </v-navigation-drawer>
-
       <v-app-bar
         v-if="showAppBar"
         app
