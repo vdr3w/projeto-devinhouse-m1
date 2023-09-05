@@ -1,29 +1,44 @@
 <template>
-  <v-container>
+  <v-container style="background-color: var(--lavender-blush)">
     <v-row>
       <v-col>
         <v-card
           elevation="12"
+          style="background-color: var(--licorice); color: var(--jonquil)"
           class="ma-10 mx-auto pa-4 pa-md-6"
           min-width="320px"
           max-width="80%">
-          <v-card-title>
-            <v-icon right>mdi-dumbbell</v-icon>
-            Exercícios
+          <v-card-title class="d-flex align-center justify-space-between">
+            <div class="d-flex align-center">
+              <v-icon right style="color: var(--jonquil)">mdi-dumbbell</v-icon>
+              Exercícios
+            </div>
           </v-card-title>
           <v-card-text>
             <v-form @submit.prevent="handleAddExercise">
               <v-text-field
                 label="Nome do exercício"
                 v-model="newExercise"
-                :rules="[rules.required]"></v-text-field>
-              <v-btn type="submit" color="primary">Cadastrar Exercicio</v-btn>
+                :rules="[rules.required]"
+                style="color: var(--jonquil)"></v-text-field>
+              <v-btn
+                type="submit"
+                style="
+                  background-color: var(--jonquil);
+                  color: var(--rosewood);
+                ">
+                Cadastrar Exercicio
+              </v-btn>
             </v-form>
-            <v-divider class="my-5"></v-divider>
+            <v-divider
+              class="my-5"
+              style="background-color: var(--jonquil)"></v-divider>
             <v-table density="compact" class="elevation-1 my-5">
               <thead class="bg-grey-lighten-2">
                 <tr>
-                  <th class="text-left font-weight-black text-overline text-h6">
+                  <th
+                    class="text-left font-weight-black text-overline text-h6"
+                    style="color: var(--battleship-gray)">
                     Exercícios
                   </th>
                 </tr>
@@ -31,7 +46,9 @@
               <tbody>
                 <tr v-for="exercise in exercises" :key="exercise.id">
                   <td>
-                    <span>{{ exercise.description }}</span>
+                    <span style="color: var(--licorice)">{{
+                      exercise.description
+                    }}</span>
                   </td>
                 </tr>
               </tbody>
@@ -42,11 +59,14 @@
     </v-row>
   </v-container>
   <v-dialog v-model="dialogVisible" max-width="290">
-    <v-card>
+    <v-card style="background-color: var(--licorice); color: var(--jonquil)">
       <v-card-title class="headline">{{ dialogTitle }}</v-card-title>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="green darken-1" text @click="dialogVisible = false">
+        <v-btn
+          style="color: var(--jonquil)"
+          text
+          @click="dialogVisible = false">
           OK
         </v-btn>
       </v-card-actions>
@@ -74,8 +94,8 @@ export default {
       rules: {
         required: (value) => !!value || "O nome do exercício é obrigatório.",
       },
-      dialogVisible: false, // Nova variável para controlar a visibilidade do diálogo
-      dialogTitle: "", // Nova variável para o título do diálogo
+      dialogVisible: false,
+      dialogTitle: "",
     };
   },
   mounted() {
@@ -114,3 +134,13 @@ export default {
   },
 };
 </script>
+
+<style>
+:root {
+  --jonquil: #f9c80e;
+  --lavender-blush: #f6e8ea;
+  --licorice: #22181c;
+  --rosewood: #5a0001;
+  --battleship-gray: #7e8987;
+}
+</style>
