@@ -9,6 +9,7 @@
           </p>
         </v-col>
       </v-row>
+
       <!-- Centralização vertical para "Imagem" -->
       <v-row class="fill-height" align="center">
         <v-col cols="12" class="d-flex align-center justify-center">

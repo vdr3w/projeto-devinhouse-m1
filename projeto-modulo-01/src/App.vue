@@ -8,7 +8,9 @@
         <v-toolbar-title style="color: var(--jonquil)">
           <div style="display: flex; align-items: center">
             <v-icon class="text-h3">mdi-weight-lifter</v-icon>
-            <p class="text-h4 d-none d-sm-flex" style="margin: 0">DevInGym</p>
+            <p class="d-none d-sm-flex custom-title ml-3" style="margin: 0">
+              DevInGym
+            </p>
           </div>
         </v-toolbar-title>
 
@@ -77,11 +79,18 @@ watchEffect(() => {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+
 :root {
   --jonquil: #f9c80e;
   --lavender-blush: #f6e8ea;
   --licorice: #22181c;
   --rosewood: #5a0001;
   --battleship-gray: #7e8987;
+}
+
+.custom-title {
+  font-family: "Nabla", cursive;
+  font-size: 35px;
 }
 </style>
