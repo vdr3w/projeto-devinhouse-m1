@@ -1,69 +1,140 @@
 <template>
-  <div>
-    <h1>Cadastro de Novo Aluno</h1>
-    <form @submit.prevent="handleFormSubmit">
-      <!-- Basic Information -->
-      <div>
-        <label for="fullName">Nome Completo (obrigatório)</label>
-        <input type="text" id="fullName" v-model="fullName" required />
-      </div>
-      <div>
-        <label for="email">E-mail (opcional)</label>
-        <input type="email" id="email" v-model="email" />
-      </div>
-      <div>
-        <label for="contact">Contato (obrigatório)</label>
-        <input type="text" id="contact" v-model="contact" required />
-      </div>
-      <div>
-        <label for="dateOfBirth">Data de Nascimento (opcional)</label>
-        <input
-          type="date"
-          id="dateOfBirth"
-          v-model="dateOfBirth"
-          :max="today" />
-      </div>
-      <!-- Address Information -->
-      <div>
-        <label for="cep">CEP (obrigatório)</label>
-        <input
-          type="text"
-          id="cep"
-          v-model="cep"
-          required
-          @blur="fetchAddress" />
-      </div>
-      <div>
-        <label for="street">Logradouro (obrigatório)</label>
-        <input type="text" id="street" v-model="street" required />
-      </div>
-      <div>
-        <label for="number">Número (obrigatório)</label>
-        <input type="text" id="number" v-model="number" required />
-      </div>
-      <div>
-        <label for="neighborhood">Bairro (obrigatório)</label>
-        <input type="text" id="neighborhood" v-model="neighborhood" required />
-      </div>
-      <div>
-        <label for="city">Cidade (obrigatório)</label>
-        <input type="text" id="city" v-model="city" required />
-      </div>
-      <div>
-        <label for="province">Estado (obrigatório)</label>
-        <input type="text" id="province" v-model="province" required />
-      </div>
-      <div>
-        <label for="complement">Complemento (opcional)</label>
-        <input type="text" id="complement" v-model="complement" />
-      </div>
-      <button type="submit">Cadastrar</button>
-    </form>
-  </div>
+  <v-card
+    loading
+    elevation="12"
+    class="ma-10 mx-auto pa-4 pa-md-6"
+    min-width="320px"
+    max-width="80%"
+    prepend-icon="mdi-home">
+    <template v-slot:title>
+      <h1 class="pa-2">Cadastro de Novo Aluno</h1>
+    </template>
+
+    <v-card-text>
+      <v-container fluid>
+        <v-row>
+          <v-col>
+            <v-form ref="form" @submit.prevent="handleFormSubmit">
+              <v-row>
+                <v-col cols="12" md="6"
+                  ><v-text-field
+                    label="Nome Completo"
+                    v-model="fullName"
+                    :rules="[rules.required]"
+                    required></v-text-field
+                ></v-col>
+                <v-col cols="12" md="6"
+                  ><v-text-field
+                    label="E-mail"
+                    v-model="email"
+                    type="email"
+                    :rules="[rules.email]"
+                    required>
+                  </v-text-field
+                ></v-col>
+              </v-row>
+
+              <v-row>
+                <v-col cols="12" md="6"
+                  ><v-text-field
+                    label="Contato"
+                    v-model="contact"
+                    :rules="[rules.required]"
+                    required></v-text-field
+                ></v-col>
+                <v-col cols="12" md="6"
+                  ><v-text-field
+                    label="Data de Nascimento"
+                    v-model="dateOfBirth"
+                    type="date"
+                    :max="today"></v-text-field
+                ></v-col>
+              </v-row>
+
+              <v-row>
+                <v-col cols="12" md="6"
+                  ><v-text-field
+                    label="CEP"
+                    v-model="cep"
+                    :rules="[rules.required, rules.cep]"
+                    @blur="fetchAddress"
+                    required></v-text-field
+                ></v-col>
+                <v-col cols="12" md="6"
+                  ><v-text-field
+                    label="Logradouro"
+                    v-model="street"
+                    :rules="[rules.required]"
+                    required></v-text-field
+                ></v-col>
+              </v-row>
+
+              <v-row>
+                <v-col cols="6" sm="2"
+                  ><v-text-field
+                    label="Estado"
+                    v-model="province"
+                    :rules="[rules.required]"
+                    required></v-text-field
+                ></v-col>
+                <v-col cols="6" sm="2"
+                  ><v-text-field
+                    label="Bairro"
+                    v-model="neighborhood"
+                    :rules="[rules.required]"
+                    required></v-text-field
+                ></v-col>
+                <v-col cols="6" sm="2"
+                  ><v-text-field
+                    label="Cidade"
+                    v-model="city"
+                    :rules="[rules.required]"
+                    required></v-text-field
+                ></v-col>
+                <v-col cols="6" sm="6"
+                  ><v-text-field
+                    label="Complemento"
+                    v-model="complement"></v-text-field
+                ></v-col>
+              </v-row>
+
+              <v-btn type="submit" class="ma-2">Cadastrar</v-btn>
+
+              <router-link to="/alunos">
+                <v-btn class="ma-2">VER ALUNOS</v-btn>
+              </router-link>
+            </v-form>
+          </v-col>
+        </v-row>
+
+        <v-snackbar
+          v-model="snackbar.show"
+          :color="snackbar.color"
+          :width="500"
+          :height="80"
+          :overlay="true"
+          vertical>
+          <div class="text-subtitle-1 pb-2">{{ snackbar.message }}</div>
+
+          <p>Limpando campos..</p>
+
+          <template v-slot:actions>
+            <v-btn color="indigo" variant="text" @click="snackbar = false">
+              Close
+            </v-btn>
+            <v-btn color="indigo" variant="text" @click="snackbar = false">
+              Close
+            </v-btn>
+          </template>
+        </v-snackbar>
+      </v-container>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import axios from "axios";
 
 const fullName = ref("");
 const email = ref("");
@@ -78,11 +149,89 @@ const province = ref("");
 const complement = ref("");
 const today = new Date().toISOString().split("T")[0];
 
-const handleFormSubmit = () => {
-  // Axios
+const snackbar = ref({ show: false, message: "", color: "" });
+
+const rules = {
+  required: (value) => !!value || "Campo obrigatório.",
+  cep: (value) => value.length === 8 || "CEP deve ter 8 dígitos.",
+  email: (value) => {
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return pattern.test(value) || "E-mail inválido.";
+  },
 };
 
-const fetchAddress = () => {
-  // Axios
+const handleFormSubmit = () => {
+  const payload = {
+    name: fullName.value,
+    email: email.value,
+    contact: contact.value,
+    date_birth: dateOfBirth.value,
+    cep: cep.value,
+    street: street.value,
+    number: number.value,
+    neighborhood: neighborhood.value,
+    city: city.value,
+    province: province.value,
+    complement: complement.value,
+  };
+
+  axios
+    .post("http://localhost:3000/students", payload)
+    .then(() => {
+      snackbar.value = {
+        show: true,
+        message: "Aluno cadastrado com sucesso!",
+        color: "success",
+      };
+      setTimeout(() => {
+        snackbar.value = { show: false, message: "", color: "" };
+        clearForm();
+      }, 2000); // 2000 milissegundos ou 2 segundos
+    })
+    .catch((error) => {
+      console.error("Erro ao cadastrar aluno:", error);
+      snackbar.value = {
+        show: true,
+        message: "Falha ao concluir cadastro de aluno.",
+        color: "error",
+      };
+      setTimeout(() => {
+        snackbar.value = { show: false, message: "", color: "" };
+      }, 2000);
+    });
+};
+
+const fetchAddress = async () => {
+  if (cep.value.length === 8) {
+    try {
+      const response = await axios.get(
+        `https://viacep.com.br/ws/${cep.value}/json/`
+      );
+      if (response.data.erro) {
+        alert("CEP não encontrado");
+      } else {
+        street.value = response.data.logradouro;
+        neighborhood.value = response.data.bairro;
+        city.value = response.data.localidade;
+        province.value = response.data.uf;
+      }
+    } catch (error) {
+      console.error("Erro ao buscar CEP:", error);
+    }
+  }
+};
+
+const clearForm = () => {
+  fullName.value = "";
+  email.value = "";
+  contact.value = "";
+  dateOfBirth.value = "";
+  cep.value = "";
+  street.value = "";
+  number.value = "";
+  neighborhood.value = "";
+  city.value = "";
+  province.value = "";
+  complement.value = "";
 };
 </script>
