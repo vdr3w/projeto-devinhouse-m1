@@ -6,10 +6,16 @@ import ExerciseManagement from "../views/ExerciseManagement/ExerciseManagement.v
 import StudentManagement from "../views/StudentManagement/StudentManagement.vue";
 import NewStudent from "../views/NewStudentRegistration/NewStudentRegistration.vue";
 import TrainingRegistration from "../views/TrainingRegistration/TrainingRegistration.vue";
+import TrainingView from "../views/TrainingView/TrainingView.vue";
 
 const routes = [
   {
     path: "/",
+    name: "Dashboard",
+    component: Dashboard,
+  },
+  {
+    path: "/login",
     name: "Login",
     component: Login,
   },
@@ -17,11 +23,6 @@ const routes = [
     path: "/register",
     name: "Register",
     component: RegisterUser,
-  },
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard,
   },
   {
     path: "/exercicios",
@@ -39,9 +40,14 @@ const routes = [
     component: NewStudent,
   },
   {
-    path: "/cadastro-treinos",
+    path: "/cadastro-treinos/:id/",
     name: "TrainingRegistration",
     component: TrainingRegistration,
+  },
+  {
+    path: "/visualizacao-treinos/:id/",
+    name: "TrainingView",
+    component: TrainingView,
   },
 ];
 
