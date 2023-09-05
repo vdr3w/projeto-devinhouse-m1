@@ -66,7 +66,7 @@
                     <span class="text-subtitle-1">{{ student.name }}</span>
                   </td>
                   <td class="d-flex align-center">
-                    <router-link to="/cadastro-treinos">
+                    <router-link :to="`/cadastro-treinos/${student.id}`">
                       <v-btn
                         icon="mdi-text-box-plus-outline"
                         density="compact"
@@ -75,7 +75,7 @@
                           color: var(--jonquil);
                         "></v-btn>
                     </router-link>
-                    <router-link to="/visualizacao-treinos">
+                    <router-link :to="`/visualizacao-treinos/${student.id}`">
                       <v-btn
                         class="ml-3"
                         density="compact"
