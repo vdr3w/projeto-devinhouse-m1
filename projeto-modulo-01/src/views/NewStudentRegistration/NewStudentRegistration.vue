@@ -22,7 +22,10 @@
       <v-container fluid>
         <v-row>
           <v-col>
-            <v-form ref="form" @submit.prevent="handleFormSubmit">
+            <v-form
+              ref="form"
+              @submit.prevent="handleFormSubmit"
+              v-model="formValid">
               <v-row>
                 <v-col cols="12" md="6"
                   ><v-text-field
@@ -107,6 +110,7 @@
               </v-row>
 
               <v-btn
+                :disabled="!formValid"
                 prepend-icon="mdi-account-check-outline"
                 stacked
                 type="submit"
@@ -175,6 +179,7 @@ const city = ref("");
 const province = ref("");
 const complement = ref("");
 const today = new Date().toISOString().split("T")[0];
+const formValid = ref(false);
 
 const snackbar = ref({ show: false, message: "", color: "" });
 
