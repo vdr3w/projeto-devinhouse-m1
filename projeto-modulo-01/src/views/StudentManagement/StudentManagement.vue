@@ -75,7 +75,8 @@
                           color: var(--jonquil);
                         "></v-btn>
                     </router-link>
-                    <router-link :to="`/visualizacao-treinos/${student.id}`">
+                    <router-link
+                      :to="`/visualizacao-treinos/${student.id}?nome=${student.name}`">
                       <v-btn
                         class="ml-3"
                         density="compact"
