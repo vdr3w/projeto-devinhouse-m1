@@ -163,7 +163,8 @@ Permite a definição de treinos específicos para alunos.
 ---
 
 ### 📍 Visualização de Treinos
-![Uploading VISUALIZAR TREINOS.png…]()
+![VISUALIZAR TREINOS](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/468dad14-af96-40e9-ae91-ae971bf89b84)
+
 
 Exibe os treinos definidos para cada aluno.
 - 🔰 Divisão por Dia da Semana: Os treinos são organizados por dia da semana para fácil referência.
