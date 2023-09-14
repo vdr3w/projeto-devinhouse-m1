@@ -37,7 +37,7 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
 
 ## Recursos do Projeto
 ### 🔰 Repositório no Github
-📌 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vdr3w/projeto-devinhouse-m1)
+📌 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vdr3w/projeto-devinhouse-m1/tree/main/projeto-modulo-01)
 
 ### 🔰 Quadro no Trello
 
