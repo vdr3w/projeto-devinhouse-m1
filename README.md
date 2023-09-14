@@ -51,6 +51,7 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
 ##  Apresentação do Projeto
 ![Descrição da Imagem](https://i.imgur.com/GcjBaP9.jpeg)
 
+
 ## Introdução
 📖 Bem-vindo ao DevInGym, uma inovação da FitManage Tech, criada com o objetivo de revolucionar o gerenciamento de treinos em academias. Como aluno do programa DevInHouse 2023, da turma Zucchetti, tive a oportunidade de mergulhar no mundo do desenvolvimento web e, neste documento, você encontrará uma descrição detalhada do projeto, desde sua concepção até sua implementação. 📖
 
@@ -88,48 +89,82 @@ Este é o componente raiz do projeto. Ele serve como o template principal para t
 ## Páginas do Projeto
 
 ### 📍 Página de Login
+![LOGIN](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/689da094-d283-42ff-857c-10b548f21724)
+
+
 Permite que os usuários insiram suas credenciais para acessar o sistema.
 - 🔰 Formulário: Contém campos para email e senha, juntamente com um botão de envio.
 - 🔰 Validação: Os campos são obrigatórios e contêm validações específicas.
 - 🔰 Redirecionamento: Em caso de sucesso, redireciona o usuário para a página principal.
 
+---
+
 ### 📍 Página de Registro
+![CADASTRO USUARIO](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/ee6cf488-8f3d-4860-a8dd-6e0c09ad710a)
+
+
 Permite que novos usuários criem uma conta no sistema.
 - 🔰 Formulário: Contém campos para nome, email, senha e confirmação de senha.
 - 🔰 Validação: Todos os campos são obrigatórios e possuem validações específicas.
 - 🔰 Redirecionamento: Após o registro bem-sucedido, redireciona o usuário para a página de login.
 
+---
+
 ### 📍 Dashboard
+![DASHBOARD](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/c99f2af8-a720-4f20-bdf4-2dc398ecf57c)
+
+
 Exibe informações gerais e serve como um painel inicial para os usuários.
 - 🔰 Botões de Ação: Fornece links rápidos para funções comuns, como adicionar alunos ou exercícios.
 - 🔰 Lista de Atividades: Mostra as atividades recentes relacionadas a treinos e alunos.
 
-### 📍 Lista de Alunos
+---
+
+### 📍 Gerenciar Alunos
+![GERENCIAMENTO ALUNO](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/00301d63-0b58-46ab-83bc-ead9a48e3f51)
+
 Exibe todos os alunos registrados no sistema.
 - 🔰 Tabela: Lista todos os alunos com detalhes como nome, email e ações disponíveis (editar/visualizar treinos).
 - 🔰 Ações: Permite a edição ou visualização dos treinos do respectivo alunos.
 - 🔰 Link para Cadastro: Um botão permite o redirecionamento para a página de cadastro de novos alunos.
 
+---
+
 ### 📍 Cadastro de Alunos
+![CADASTRO NOVO ALUNO](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/d862d136-a4cb-4fb9-8667-7b9b706fb441)
+
+
 Fornece um formulário para adicionar novos alunos ao sistema.
 - 🔰 Formulário: Contém campos como nome, email, data de nascimento, cep.
 - 🔰 Validação: Todos os campos são obrigatórios e contêm validações específicas e aqui é feita uma requisição para viacep para autocompletar os campos de endereço.
 - 🔰 Inclusão no Banco de Dados: Os dados são enviados para o endpoint apropriado após a validação.
 
-### 📍 Cadastro de Exercícios
+---
+
+### 📍 Gerenciamento de Exercícios
+![GERENCIAMENTO EXERCICIO](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/78c22b45-acd9-4837-b9ef-f5257e7186fe)
+
 Permite aos usuários adicionar novos exercícios ao sistema.
 - 🔰 Formulário: Inclui campos como descrição do exercício, carga, duração, etc.
 - 🔰 Validação: Validações específicas são aplicadas a cada campo para garantir a integridade dos dados.
 - 🔰 Inclusão no Banco de Dados: Os exercícios são adicionados ao banco de dados após a validação.
 
+---
+
 ### 📍 Cadastro de Treinos
+![CADASTRO TREINO](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/064a2849-1e13-447f-ba36-f4be66f2cade)
+
 Permite a definição de treinos específicos para alunos.
 - 🔰 Seleção de Exercícios: Os usuários podem escolher exercícios previamente cadastrados.
 - 🔰 Detalhes do Treino: Inclui informações como repetições, peso, intervalo e observações.
 - 🔰 Dia da Semana: Permite especificar o dia da semana para o treino.
 - 🔰 Inclusão no Banco de Dados: Os detalhes do treino são enviados para o endpoint apropriado após a validação.
 
+---
+
 ### 📍 Visualização de Treinos
+![Uploading VISUALIZAR TREINOS.png…]()
+
 Exibe os treinos definidos para cada aluno.
 - 🔰 Divisão por Dia da Semana: Os treinos são organizados por dia da semana para fácil referência.
 - 🔰 Ações de Atualização: Os usuários podem marcar exercícios específicos como concluídos.
