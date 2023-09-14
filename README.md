@@ -136,7 +136,7 @@ Exibe os treinos definidos para cada aluno.
 - 🔰 Lista de Exercícios: Cada exercício é listado com seus detalhes relevantes para cada dia.
 
 ## Conclusão
-📖 Ao terminar este projeto, percebi o quanto cresci e o quanto sou capaz. Tive meus momentos de ansiedade e desespero, mas com organização e foco, consegui finalizar de forma satisfatória e com tempo sobrando! Estou bem feliz não só com o que fiz, mas com todo o caminho que percorri até aqui. O "DevInGym" não é só um trabalho de final de módulo, é o resultado de muita dedicação e aprendizado. Espero que este documento tenha fornecido uma visão clara e abrangente do projeto. Obrigado por essa jornada, Professores Bruno, Douyglas e pro Romeu que não vai ler mas me ajudou muito!  📖
+📖 Ao terminar este projeto, percebi o quanto cresci e o quanto sou capaz. Tive meus momentos de ansiedade e desespero, mas com organização e foco, consegui finalizar de forma satisfatória e com tempo sobrando! Estou bem feliz não só com o que fiz, mas com todo o caminho que percorri até aqui. O "DevInGym" não é só um trabalho de final de módulo, é o resultado de muita dedicação e aprendizado. Espero que este documento tenha fornecido uma visão clara e abrangente do projeto. Obrigado por essa jornada, Professores Bruno, Douglas e pro Romeu que não vai ler mas me ajudou muito!  📖
 
 ## Entre em contato comigo: 
 <div>
