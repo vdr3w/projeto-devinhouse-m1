@@ -107,7 +107,6 @@ export default {
 };
 </script>
 
-<!-- Atualizando o estilo para seguir o padrão do App.vue -->
 <style>
 :root {
   --jonquil: #f9c80e;
