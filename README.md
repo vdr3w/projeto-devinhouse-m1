@@ -18,10 +18,10 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
 
 ## Equipe do Projeto
 ### 📍 Colaboradores
-Andre Leonardo Rocha Vieira
+- Andre Leonardo Rocha Vieira
 
 ### 📍 Avaliadores Do Projeto
-Bruno Costa e Douglas Cavalcante
+- Bruno Costa e Douglas Cavalcante
 
 ## Recursos do Projeto
 ### 🔰 Repositório no Github
@@ -37,7 +37,7 @@ Bruno Costa e Douglas Cavalcante
 📸 ![Descrição da Imagem](https://i.imgur.com/GcjBaP9.jpeg)
 
 ## Introdução
-📖 Este documento detalha a estrutura e a lógica dos principais componentes e páginas do Sistema de Gerenciamento de Treino. O projeto foi desenvolvido usando o framework Vue.js e segue os princípios de design e desenvolvimento moderno usando a biblioteca Vuetify. 📖 
+📖 Bem-vindo ao DevInGym, uma inovação da FitManage Tech, criada com o objetivo de revolucionar o gerenciamento de treinos em academias. Como aluno do programa DevInHouse 2023, da turma Zucchetti, tive a oportunidade de mergulhar no mundo do desenvolvimento web e, neste documento, você encontrará uma descrição detalhada do projeto, desde sua concepção até sua implementação. 📖
 
 ## Instruções de Instalação
 1. 🛠️ **Baixar o Projeto**:
@@ -119,4 +119,4 @@ Exibe os treinos definidos para cada aluno.
 - 🔰 Lista de Exercícios: Cada exercício é listado com seus detalhes relevantes para cada dia.
 
 ## Conclusão
-📖 Este projeto foi desenvolvido seguindo as melhores práticas de design e desenvolvimento. Cada componente e página foi criado com foco na experiência do usuário e na eficiência do sistema. A documentação aqui fornecida oferece uma visão detalhada da estrutura e funcionalidade do projeto, garantindo uma compreensão completa de seu funcionamento e design. As instruções de instalação foram detalhadamente explicadas para garantir uma fácil configuração e execução do projeto por qualquer usuário, mesmo sem experiência prévia. 📖 
+📖 Ao terminar este projeto, percebi o quanto cresci e o quanto sou capaz. Tive meus momentos de ansiedade e desespero, mas com organização e foco, consegui finalizar de forma satisfatória e com tempo sobrando! Estou bem feliz não só com o que fiz, mas com todo o caminho que percorri até aqui. O "DevInGym" não é só um trabalho de final de módulo, é o resultado de muita dedicação e aprendizado. Espero que este documento tenha fornecido uma visão clara e abrangente do projeto. Obrigado por essa jornada, Professores Bruno, Douyglas e pro Romeu que não vai ler mas me ajudou muito!  📖
