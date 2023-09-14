@@ -16,14 +16,14 @@
 ### 🔰 Descrição
 A FitManage Tech, uma prestigiada empresa no setor de academias, está avançando em sua missão de proporcionar excelência no gerenciamento de treinos. Com a crescente demanda, sua equipe de especialistas está empenhada em desenvolver uma inovadora aplicação web, denominada DevInGym, dedicada aos instrutores de academia para aprimorar a administração dos treinamentos de seus alunos.
 
-## 📍 Equipe do Projeto
+## Equipe do Projeto
 ### 🔰 Colaboradores
 Andre Leonardo Rocha Vieira
 
 ### 🔰 Avaliadores Do Projeto
 Bruno Costa e Douglas Cavalcante
 
-## 📍 Recursos do Projeto
+## Recursos do Projeto
 ### 🔰 Repositório no Github
 📌 [https://github.com/vdr3w/projeto-devinhouse-m1](https://github.com/vdr3w/projeto-devinhouse-m1)
 
