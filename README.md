@@ -69,9 +69,9 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
      npm install
      ```
 3. 🛠️ **Executando o Projeto**:
-   - Uma vez que todas as dependências estejam instaladas, você pode iniciar o servidor de desenvolvimento com o seguinte comando:
+   - Uma vez que todas as dependências estejam instaladas, você pode iniciar o projeto de desenvolvimento com o seguinte comando:
      ```bash
-     npm run server
+     npm run dev
      ```
    - Após iniciar o servidor, você pode acessar o aplicativo em seu navegador usando o endereço: `http://localhost:5173/` (a menos que você tenha especificado uma porta diferente).
 4. 🛠️ **Acessando o Projeto**:
