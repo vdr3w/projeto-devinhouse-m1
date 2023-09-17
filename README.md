@@ -49,7 +49,11 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
 )](https://drive.google.com/drive/folders/1a2jAUUjWbeVbPhw8B0hDpxx_1--9OjhI?usp=drive_link)
 
 ##  Apresentação do Projeto
-[![botaoapresentação](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/387fb789-78dc-4726-a7ee-5ff1ddae2dd8)](https://drive.google.com/file/d/1VH9Tobon1KNlS_52b3JEaW6T384qpiR6/view?usp=sharing)
+
+
+<div>
+    <a href="https://drive.google.com/file/d/1VH9Tobon1KNlS_52b3JEaW6T384qpiR6/view?usp=sharing"><img src="https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/387fb789-78dc-4726-a7ee-5ff1ddae2dd8" alt="Apresentação de Projeto" /></a>
+</div>
 
 
 
@@ -181,5 +185,5 @@ Exibe os treinos definidos para cada aluno.
     <a href="mailto:drewvieirasocial@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Drew" /></a>
 </div>
 <div>
-    <a href="https://www.linkedin.com/in/vieiradrew/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Gmail Drew" /></a>
+    <a href="https://www.linkedin.com/in/vieiradrew/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Drew" /></a>
 </div>
