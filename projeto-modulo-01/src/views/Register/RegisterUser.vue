@@ -72,7 +72,7 @@
             margin-top: 20px;
           ">
           <v-btn
-            prepend-icon="$vuetify"
+            prepend-icon="mdi-home"
             stacked
             type="submit"
             style="background-color: var(--jonquil); color: var(--rosewood)">
