@@ -49,14 +49,11 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
 )](https://drive.google.com/drive/folders/1a2jAUUjWbeVbPhw8B0hDpxx_1--9OjhI?usp=drive_link)
 
 ##  Apresentação do Projeto
-
-
 <div>
-    <a href="https://drive.google.com/file/d/1VH9Tobon1KNlS_52b3JEaW6T384qpiR6/view?usp=sharing"><img src="https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/387fb789-78dc-4726-a7ee-5ff1ddae2dd8" alt="Apresentação de Projeto" /></a>
+    <a href="https://drive.google.com/drive/folders/1a2jAUUjWbeVbPhw8B0hDpxx_1--9OjhI" target="_blank">
+        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/84882983/268520302-387fb789-78dc-4726-a7ee-5ff1ddae2dd8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230917T181444Z&X-Amz-Expires=300&X-Amz-Signature=5c828dbb29fb445b6a936f48675da4b47782574efda16edf91f44fa12fe2fbde&X-Amz-SignedHeaders=host&actor_id=84882983&key_id=0&repo_id=684812522" alt="Imagem Clicável">
+    </a>
 </div>
-
-
-
 
 ## Introdução
 📖 Bem-vindo ao DevInGym, uma inovação da FitManage Tech, criada com o objetivo de revolucionar o gerenciamento de treinos em academias. Como aluno do programa DevInHouse 2023, da turma Zucchetti, tive a oportunidade de mergulhar no mundo do desenvolvimento web e, neste documento, você encontrará uma descrição detalhada do projeto, desde sua concepção até sua implementação. 📖
