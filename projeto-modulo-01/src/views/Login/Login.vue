@@ -12,7 +12,7 @@
           min-width: 300px;
         ">
         <v-card-title>
-          <v-icon large style="width: 50px; height: 50px">$vuetify</v-icon>
+          <v-icon large style="width: 50px; height: 50px">mdi-home</v-icon>
         </v-card-title>
         <v-form ref="form" @submit.prevent="handleSubmit" class="login-form">
           <v-snackbar
