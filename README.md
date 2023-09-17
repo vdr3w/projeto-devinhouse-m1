@@ -49,8 +49,11 @@ A FitManage Tech, uma prestigiada empresa no setor de academias, está avançand
 )](https://drive.google.com/drive/folders/1a2jAUUjWbeVbPhw8B0hDpxx_1--9OjhI?usp=drive_link)
 
 ##  Apresentação do Projeto
-![Descrição da Imagem](https://i.imgur.com/GcjBaP9.jpeg)
-
+<div>
+    <a href="https://drive.google.com/file/d/1VH9Tobon1KNlS_52b3JEaW6T384qpiR6/view?usp=sharing" target="_blank">
+        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/84882983/268520302-387fb789-78dc-4726-a7ee-5ff1ddae2dd8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230917T181444Z&X-Amz-Expires=300&X-Amz-Signature=5c828dbb29fb445b6a936f48675da4b47782574efda16edf91f44fa12fe2fbde&X-Amz-SignedHeaders=host&actor_id=84882983&key_id=0&repo_id=684812522" alt="Imagem Clicável">
+    </a>
+</div>
 
 ## Introdução
 📖 Bem-vindo ao DevInGym, uma inovação da FitManage Tech, criada com o objetivo de revolucionar o gerenciamento de treinos em academias. Como aluno do programa DevInHouse 2023, da turma Zucchetti, tive a oportunidade de mergulhar no mundo do desenvolvimento web e, neste documento, você encontrará uma descrição detalhada do projeto, desde sua concepção até sua implementação. 📖
@@ -89,7 +92,7 @@ Este é o componente raiz do projeto. Ele serve como o template principal para t
 ## Páginas do Projeto
 
 ### 📍 Página de Login
-![LOGIN](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/689da094-d283-42ff-857c-10b548f21724)
+![LOGIN](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/802178e5-87c2-437c-bd59-18e2a1661ab7)
 
 
 Permite que os usuários insiram suas credenciais para acessar o sistema.
@@ -179,5 +182,5 @@ Exibe os treinos definidos para cada aluno.
     <a href="mailto:drewvieirasocial@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Drew" /></a>
 </div>
 <div>
-    <a href="https://www.linkedin.com/in/vieiradrew/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Gmail Drew" /></a>
+    <a href="https://www.linkedin.com/in/vieiradrew/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Drew" /></a>
 </div>
