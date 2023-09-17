@@ -89,7 +89,7 @@ Este é o componente raiz do projeto. Ele serve como o template principal para t
 ## Páginas do Projeto
 
 ### 📍 Página de Login
-![LOGIN](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/689da094-d283-42ff-857c-10b548f21724)
+![LOGIN](https://github.com/vdr3w/projeto-devinhouse-m1/assets/84882983/802178e5-87c2-437c-bd59-18e2a1661ab7)
 
 
 Permite que os usuários insiram suas credenciais para acessar o sistema.
